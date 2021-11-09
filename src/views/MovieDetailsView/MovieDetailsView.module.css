@@ -1,0 +1,33 @@
+.movieDetailsPage {
+  /* width: 1280px; */
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  margin-top: 12px;
+}
+
+.movieDetails {
+  width: 600px;
+  margin-left: 30px;
+}
+
+.imgMovie {
+  width: 250px;
+  height: auto;
+}
+
+.button {
+  margin-top: 45px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: #08df7b;
+  border-radius: 5px;
+  color: black;
+}
+
+.title {
+  color: rgb(48, 19, 95);
+}
