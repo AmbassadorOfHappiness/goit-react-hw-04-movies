@@ -5,7 +5,7 @@ const BASE_URL = 'https://api.themoviedb.org/3';
 
 const fetchTrendingMovies = () => {
     return axios
-        .get(`${BASE_URL}/trending/all/day?api_key=${API_KEY}`,)
+        .get(`${BASE_URL}/trending/movie/week?api_key=${API_KEY}`,)
         .then(({data}) => data.results);
 }
 const fetchSearchMovies = (searchQuery) => {

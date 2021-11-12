@@ -41,8 +41,9 @@ export default function MoviesView() {
             <SearchForm onSubmit={onChangeQuery} />
             {error && <p>Sorry! Please? try again!</p>}
             <div className={style.container}>
-                {movies && (<ul className={style.cardSet}>
-                    {movies.map(movie => (
+                <ul className={style.cardSet}>
+                {movies && 
+                    movies.map(movie => (
                         <li key={movie.id} className={style.item}>
                           <article className={style.card}>   
                             <Link to={{
@@ -76,8 +77,8 @@ export default function MoviesView() {
                           </article>
                         </li>
                     ))}
-                    </ul>
-                )}
+                
+                </ul>
             </div>
         </>
     );

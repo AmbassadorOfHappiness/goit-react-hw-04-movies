@@ -23,7 +23,7 @@ export default function MovieDetailsView() {
     }, [movieId]);
 
     const onGoBack = () => {
-        history.push(location?.state?.from?.location ?? '/movies');
+        history.push(location?.state?.from?.location ?? '/');
     };
     
     // console.log(slug.match(/[a-z0-9]+$/)[0]);
@@ -35,7 +35,7 @@ export default function MovieDetailsView() {
             <button type='button' onClick={onGoBack} className={style.button}>
                 {location?.state?.from?.label ?? 'Back'}
             </button>
-            {movie && 
+            {movie && (
               <div className={style.container}>
                 {movie.poster_path ? (
 
@@ -73,7 +73,7 @@ export default function MovieDetailsView() {
                     {/* <p>{movie.genres.map(genre => `${genre.name} `)}</p> */}
                 </div>
                 </div>
-            }
+            )}
             <h3>Additional information</h3>
             <ul>
                 <li>
